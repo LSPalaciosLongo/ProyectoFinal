@@ -360,7 +360,7 @@ form div {
         grid-area: title;
         color: rgb(10, 36, 107);
         font-weight: bold;
-        font-size: 24px;
+        font-size: 20px;
         padding: 2% 0 2% 2%;
         justify-self: center;
         align-self: center;
@@ -390,7 +390,7 @@ form div {
         margin-bottom: 3px;
         border: 1px solid black;
         padding: 0.25%;
-        height: 16px;
+        height: 20px;
         text-align: center;
 
     }
