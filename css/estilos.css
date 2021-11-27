@@ -410,3 +410,103 @@ form div {
     }
 
 }
+
+@media screen and (max-width: 300px) {
+
+
+    body {
+        padding-top: 300px;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(27, 175, 193, 1) 50%, rgba(255, 255, 255, 1) 100%);
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .header {
+        background-color: rgb(232, 248, 252);
+        margin-bottom: 1px;
+        padding: 5px 0;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "logo"
+            "title"
+            "nav"
+        ;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        z-index: 1;
+
+    }
+
+    .headerA {
+        grid-area: logo;
+        width: 90px;
+        height: 90px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .headerLogo {
+        padding-left: 2%;
+        width: 90px;
+        height: 90px;
+    }
+
+    .headerTitle {
+        grid-area: title;
+        color: rgb(10, 36, 107);
+        font-weight: bold;
+        font-size: 16px;
+        padding: 2% 0 2% 2%;
+        justify-self: center;
+        align-self: center;
+
+    }
+
+    .header nav {
+        grid-area: nav;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .header nav ul {
+        list-style-type: none;
+        padding-left: 1%;
+        font-size: 12px;
+        display: inline;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .header nav ul li {
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-bottom: 3px;
+        border: 1px solid black;
+        padding: 0.25%;
+        height: 20px;
+        text-align: center;
+
+    }
+
+    .sectionConfig {
+        text-align: justify;
+        line-height: 1.5;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 2%;
+        margin-top: 1%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        width: 80%;
+        border: 5px inset rgba(6, 44, 70, 0.75);
+        border-radius: 0px 20px 0px 20px;
+    }
+
+}
