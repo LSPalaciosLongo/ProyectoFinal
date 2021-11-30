@@ -415,6 +415,13 @@ form div {
 
     }
 
+    .fixCarousel{
+        padding: 2%;
+        overflow: hidden;
+        max-height: 150px;
+        z-index: 0;
+    }
+
     .sectionConfig {
         text-align: justify;
         line-height: 1.5;
