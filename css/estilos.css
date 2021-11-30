@@ -176,8 +176,12 @@ vw: viewport width
 .fixCarousel{
     padding: 2%;
     overflow: hidden;
-    max-height: 450px;
+    max-height: 500px;
     z-index: 0;
+}
+
+.fixCarouselAa{
+    max-height: 500px;
 }
 
 .imgHispano {
@@ -420,6 +424,10 @@ form div {
         overflow: hidden;
         max-height: 150px;
         z-index: 0;
+    }
+
+    .fixCarouselAa{
+        max-height: 500px;
     }
 
     .sectionConfig {
