@@ -43,6 +43,7 @@ a {
 
 }
 
+
 .headerA {
     grid-area: logo;
     width: 150px;
@@ -236,6 +237,7 @@ form div {
     padding-bottom: 7%;
     margin-top: 2%;
     bottom: 0;
+    cursor: pointer;
 }
 
 .footerLogo:hover {
@@ -439,7 +441,7 @@ form div {
         margin-top: 1%;
         margin-bottom: 5%;
         margin-left: 5%;
-        width: 90%;
+        width: 80%;
         border: 5px inset rgba(6, 44, 70, 0.75);
         border-radius: 0px 20px 0px 20px;
     }
