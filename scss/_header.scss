@@ -24,8 +24,7 @@
     z-index: 1;
     margin: 0 auto;
 
-
-    &A {
+    &A{
         grid-area: logo;
         width: 150px;
         height: 150px;
@@ -33,18 +32,24 @@
         justify-self: center;
     }
 
-    &Logo {
+    &Logo{
         padding-left: 2%;
         width: 150px;
         height: 150px;
         align-self: center;
         justify-self: center;
-
-        :hover {
+        
+        &:hover {
             transform: skewX(2deg);
             transition: 0.6s;
         }
-
+        
+        &:active {
+            position: relative;
+            top: 1px;
+            transform: scale(0.6);
+            transition: 0.8s;
+        }
     }
 
     &Title{
@@ -54,34 +59,22 @@
         display: flex;
         align-items: center;
 
-
         h1{
             font-weight: bold;
             font-size: 32px;
         }
+        
     }
 
-
-    nav {
+    nav{
         grid-area: nav;
-    
+
         ul{
             list-style-type: none;
             padding-left: 2%;
             display: flex;
             align-items: center;
-    
-            :hover{
-                background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
-                background-color: #1e62d0;
-            }
-    
-            :active {
-                position: relative;
-                top: 1px;
-            }
-    
-    
+
             li{
                 box-shadow: inset 0px 0px 0px 0px #97c4fe;
                 background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
@@ -90,15 +83,31 @@
                 margin-bottom: 5px;
                 border: 2px solid black;
                 padding: 0.5%;
-    
+
                 a{
                     margin: 0px; 
                     display: block; 
                     width: 100%; 
                     height: 100%;
+
+                    &:hover{
+                        color:azure;
+                    }
+
                 }
+
+                &:hover{
+                    background: linear-gradient(to bottom, #2763c4 5%, #a59d51 100%);
+                }
+
+                &:active{
+                    position: relative;
+                    top: 1px;
+                }
+
             }
         }
+
     }
 
 }

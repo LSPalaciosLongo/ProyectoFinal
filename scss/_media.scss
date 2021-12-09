@@ -44,26 +44,25 @@
                 font-size: 24px;
                 text-align: center;
                 }
+        }
+        nav{
+            grid-area: nav;
 
-            nav{
-                grid-area: nav;
+            ul{
+                list-style-type: none;
+                padding-left: 1%;
+                font-size: 14px;
+                display: inline;
+                text-align: center;
 
-                ul{
-                    list-style-type: none;
-                    padding-left: 1%;
-                    font-size: 14px;
-                    display: inline;
-                    text-align: center;
-
-                    li{
-                        margin-right: 6px;
-                        margin-bottom: 3px;
-                        border: 1px solid black;
-                        padding: 0.25%;
-                        box-sizing: border-box;
-                        margin: 4px 10px;
+                li{
+                    margin-right: 6px;
+                    margin-bottom: 3px;
+                    border: 1px solid black;
+                    padding: 0.25%;
+                    box-sizing: border-box;
+                    margin: 4px 10px;
                     
-                    }
                 }
             }
         }
