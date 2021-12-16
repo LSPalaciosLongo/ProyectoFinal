@@ -1,14 +1,37 @@
+@mixin section($textAlign, $lineHeight, $width, $mrgBot){
+    text-align: $textAlign;
+    line-height: $lineHeight;
+    width: $width;
+    margin-bottom: $mrgBot;
+
+}
+
+@mixin padSection($pdgTop, $pdgLeft, $pdgRight, $pdgBot){
+    padding-top: $pdgTop;
+    padding-left: $pdgLeft;
+    padding-right: $pdgRight;
+    padding-bottom: $pdgBot;
+
+}
+
 .sectionConfig {
-    text-align: justify;
-    line-height: 1.5;
-    padding-top: 2%;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-bottom: 2%;
-    margin-bottom: 16px;
-    width: 100%;
+    @include section(justify, 1.5, 100%, 2%);
+    @include padSection(2%, 4%, 4%, 2%);
+    //text-align: justify;
+    //line-height: 1.5;
+    //padding-top: 2%;
+    //padding-left: 4%;
+    //padding-right: 4%;
+    //padding-bottom: 2%;
+    //margin-bottom: 16px;
+    //width: 100%;
     border: 5px inset rgba(6, 44, 70, 0.75);
-    border-radius: 10px 25px 10px 25px;
+    border-radius: 30px 10px 30px 10px;
+}
+
+.sectionConfigEspecial{
+    @extend .sectionConfig;
+    border-radius: 2px 50px 2px 50px;
 }
 
 label {
