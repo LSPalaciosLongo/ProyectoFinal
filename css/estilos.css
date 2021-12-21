@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    padding-top: 200px;
+    padding-top: 180px;
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(48, 180, 197) 50%, rgba(255, 255, 255, 1) 100%);
     font-family: 'Roboto', sans-serif;
@@ -22,8 +23,8 @@ a {
 }
 
 .background {
-    background: rgb(207, 207, 155);
-    background: linear-gradient(6deg, rgba(207, 207, 155, 1) 39%, rgba(174, 221, 242, 1) 100%);
+    background: rgba(207, 207, 155, 0.99);
+    background: linear-gradient(6deg, rgba(207, 207, 155, 0.99) 39%, rgba(174, 221, 242, 0.99) 100%);
     position: fixed;
     top: 0;
     width: 100%;
@@ -135,6 +136,7 @@ a {
 
 .header nav ul li a:hover{
     color:azure;
+    font-weight: bold;
 }
 
 .bodyContainer {
@@ -170,18 +172,6 @@ a {
     top: 1px;
 }
 
-
-/*
-
-VIEWPORT
-
-vh: viewport height
-vw: viewport width
-
-*/
-
-
-
 .sectionConfig {
     text-align: justify;
     line-height: 1.5;
@@ -193,19 +183,61 @@ vw: viewport width
     width: 100%;
     border: 5px inset rgba(6, 44, 70, 0.75);
     border-radius: 10px 25px 10px 25px;
-}
-/* Carousel INDEX
-.fixCarousel{
-    padding: 2%;
-    overflow: hidden;
-    max-height: 500px;
-    z-index: 0;
+    background: rgba(207, 207, 155, 0.5);
 }
 
-.fixCarouselAa{
-    max-height: 500px;
+.titleH h2{
+    font-weight: bold;
+    font-size: 24px;
 }
- Carousel INDEX*/
+
+.titleH h3{
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.titleHt h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.parrafosPages{
+    padding: 0 120px;
+}
+.parrafosPages p{
+    line-height: 2.25;
+    text-align: justify;
+    justify-content: space-around;
+}
+
+.aboutArgFootage p{
+    font-weight: bold;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.claseFlexUno{
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    font-weight: 1000;
+}
+
+.idiomaHisp{
+    font-weight: bold;
+}
+
+.pictureScroll{
+    background-image: url("../images/caminito1280.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 380px;
+}
 
 /* mapamundi*/
 .imgHispano {
@@ -276,12 +308,17 @@ form div {
     top: 1px;
 }
 
+.imgFooter{
+    display: flex;
+    justify-content: center;
+}
+
 
 @media screen and (max-width: 768px) {
 
 
     body {
-        padding-top: 380px;
+        padding-top: 360px;
         background: rgb(255, 255, 255);
         background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(27, 175, 193, 1) 50%, rgba(255, 255, 255, 1) 100%);
         font-family: 'Roboto', sans-serif;
@@ -348,6 +385,26 @@ form div {
         box-sizing: border-box;
         margin: 4px 10px;
 
+    }
+
+    .titleH h2{
+        font-size: 20px;
+    }
+    
+    .titleH h3{
+        font-size: 16px;
+    }
+
+    .titleHt h3{
+        font-size: 16px;
+    }
+
+    .parrafosPages{
+        padding: 0 10px;
+    }
+
+    .pictureScroll{
+        height: 350px;
     }
 
 }

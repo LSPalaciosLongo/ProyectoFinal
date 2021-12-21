@@ -27,6 +27,7 @@
     //width: 100%;
     border: 5px inset rgba(6, 44, 70, 0.75);
     border-radius: 30px 10px 30px 10px;
+    background: rgba(207, 207, 155, 0.5);
 }
 
 .sectionConfigEspecial{
@@ -45,4 +46,24 @@ form {
         padding: 5px;
     }
     
+}
+
+.titleH{
+
+    h2{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    
+}
+
+.parrafosPages{
+    
+    padding: 0 120px;
+
+    p{
+        line-height: 2.25;
+        text-align: justify;
+        justify-content: space-around;
+    }
 }
