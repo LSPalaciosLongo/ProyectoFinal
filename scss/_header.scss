@@ -1,6 +1,7 @@
 .background {
-    background: rgb(207, 207, 155);
-    background: linear-gradient(6deg, rgba(207, 207, 155, 1) 39%, rgba(174, 221, 242, 1) 100%);
+    background: #FDE08D;
+    background: -webkit-linear-gradient(top, #8f6b29f2, #FDE08Df2, #DF9F28f2);
+    background: linear-gradient(top, #8f6b29f2, #FDE08Df2, #df9f28f2);
     position: fixed;
     top: 0;
     width: 100%;
@@ -8,7 +9,6 @@
 }
 
 .header {
-    /*background-color:rgb(179, 185, 187);*/
     max-width: 1280px;
     margin-bottom: 5px;
     padding: 10px 0;
