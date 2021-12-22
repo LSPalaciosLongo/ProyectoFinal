@@ -234,8 +234,9 @@ a {
 }
 
 .pictureScroll{
-    background-image: url("../images/caminito.jpg");
+    background-image: url("../images/caminito.webp");
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
     margin: auto;
@@ -293,7 +294,7 @@ form div {
 /*Redes Sociales*/
 
 .footer {
-    background-image: url(../images/vector-buenos-aires.jpg);
+    background-image: url(../images/vector-buenos-aires.webp);
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
