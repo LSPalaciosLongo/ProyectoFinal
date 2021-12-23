@@ -222,12 +222,14 @@ a {
     justify-content: space-around;
 }
 
-.claseFlexUno{
+/*Textos Clases*/
+.claseFlexUno{ 
     display: flex;
-    justify-content: right;
+    justify-content: end;
     text-align: right;
     font-weight: bold;
 }
+/*Textos Clases*/
 
 .idiomaHisp{
     font-weight: bold;
