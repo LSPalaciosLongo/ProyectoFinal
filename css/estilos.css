@@ -6,8 +6,9 @@
 
 body {
     padding-top: 180px;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(92, 191, 204) 50%, rgba(255, 255, 255, 1) 100%);
+    background: rgb(205, 210, 255);
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(205,210,255,1) 40%);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -23,9 +24,8 @@ a {
 }
 
 .background {
-    background: #FDE08D;
-  	background: -webkit-linear-gradient(top, #8f6b29f2, #FDE08Df2, #DF9F28f2);
-	background: linear-gradient(top, #8f6b29f2, #FDE08Df2, #df9f28f2);
+    background: black;
+    border-bottom: 3px double #6a88f8;
     position: fixed;
     top: 0;
     width: 100%;
@@ -72,7 +72,7 @@ a {
 
 .headerLogo:hover {
     position: relative;
-    top: 1px;
+    top: 2px;
 }
 
 .headerLogo:active {
@@ -85,7 +85,8 @@ a {
 
 .headerTitle {
     grid-area: title;
-    color: rgb(10, 36, 107);
+    /*color: rgb(10, 36, 107);*/
+    color: #6a88f8;
     padding: 2% 0 2% 2%;
     display: flex;
     align-items: center;
@@ -109,15 +110,9 @@ a {
 }
 
 .header nav ul li {
-    box-shadow: inset 0px 0px 0px 0px #97c4fe;
-    background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
-    background-color: #2670c4;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    border: 2px solid black;
-    padding: 0.5%;
-    border-radius: 7px;
-    border: 1px solid #337fed;
+    margin-right: 30px;
+    padding: 0;
+    text-align: center;
 
 }
 
@@ -127,20 +122,20 @@ a {
     width: 100%; 
     height: 100%;
     font-weight: bold;
+    color: white;
+}
+
+.header nav ul li a:hover{
+    color: #6a88f8;
 }
 
 .header nav ul li:hover {
-    background: linear-gradient(to bottom, #2763c4 5%, #a59d51 100%);
+    border-bottom: 1px solid #c0c3cd;;
 }
 
 .header nav ul li:active {
     position: relative;
     top: 1px;
-}
-
-.header nav ul li a:hover{
-    color:azure;
-    font-weight: bold;
 }
 
 .bodyContainer {
@@ -151,10 +146,10 @@ a {
 
 .myButton {
     box-shadow: inset 0px 0px 0px 0px #97c4fe;
-    background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
-    background-color: #2670c4;
+    background: linear-gradient(to bottom, #6a88f8 5%, #1e62d0 100%);
+    background-color: #6a88f8;
     border-radius: 7px;
-    border: 1px solid #337fed;
+    border: 1px solid #6a88f8;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
@@ -167,8 +162,8 @@ a {
 }
 
 .myButton:hover {
-    background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
-    background-color: #1e62d0;
+    background: linear-gradient(to bottom, #1e62d0 5%, #6a88f8 100%);
+    background-color: #6a88f8;
 }
 
 .myButton:active {
@@ -185,14 +180,15 @@ a {
     padding-bottom: 2%;
     margin-bottom: 16px;
     width: 100%;
-    border: 5px inset rgba(6, 44, 70, 0.75);
+    border: 5px groove rgb(192,195,205, 0.75);
     border-radius: 10px 25px 10px 25px;
+    border-radius: 30px;
     cursor: pointer;
     
 }
 
 .sectionConfig:hover{
-    background: rgba(207, 207, 155, 0.5);
+    background: #9974ff3f;
 }
 
 .titleH h2{
@@ -269,21 +265,18 @@ form div {
 }
 
 .videoResponsive {
-	height: 0;
-	overflow: hidden;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	position: relative;
-    z-index: 0;
-	}
-    
-.videoResponsive iframe, .videoResponsive object, .videoResponsive embed {
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	}
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+      }
+.videoResponsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
 
 /*Redes Sociales*/
 
@@ -313,6 +306,11 @@ form div {
     justify-content: center;
 }
 
+.footerCopy{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -354,7 +352,6 @@ form div {
     .headerTitle {
         padding:0;
         grid-area: title;
-        color: rgb(10, 36, 107);
         padding-top: 2%;
         display: flex;
         justify-content: space-around;
@@ -382,10 +379,11 @@ form div {
     .header nav ul li {
         margin-right: 6px;
         margin-bottom: 3px;
-        border: 1px solid black;
+        border: 1px solid white;
+        border-radius: 8px;
         padding: 0.25%;
         box-sizing: border-box;
-        margin: 4px 10px;
+        margin: 8px 5px;
 
     }
 
@@ -408,5 +406,33 @@ form div {
    .claseFlexUno{
        font-size: 12px;
    }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+
+    body {
+        padding-top: 200px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    h2{ 
+        font-size: 26px;
+    }
+    a {
+        font-size: 20px;
+    }
+    p{
+        font-size: 22px;
+    }
+
+    .header nav ul li {
+        margin-right: 12px;
+    
+    }
 
 }
