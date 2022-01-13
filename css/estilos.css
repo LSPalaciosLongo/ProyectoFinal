@@ -24,7 +24,7 @@ a {
 }
 
 .background {
-    background: black;
+    background: rgb(44, 44, 44);
     border-bottom: 3px double #6a88f8;
     position: fixed;
     top: 0;
@@ -187,8 +187,33 @@ a {
     
 }
 
+
 .sectionConfig:hover{
     background: #9974ff3f;
+}
+
+.seccionSinCuadroCentrado{
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+    margin-bottom: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.derecha{
+    text-align: end;
+}
+
+.primParraf{
+    font-size: 18px;
 }
 
 .titleH h2{
@@ -206,6 +231,19 @@ a {
     font-weight: bold;
     font-size: 20px;
 }
+.titleHt h4{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.espaciado{
+    margin-top: 25px;
+}
+
+.sangria{
+    text-indent: 40px;
+}
 
 .parrafosPages{
     padding: 0 120px;
@@ -220,6 +258,7 @@ a {
     font-weight: bold;
     text-align: center;
     justify-content: space-around;
+    font-size: 20px;
 }
 
 /*Textos Clases*/
@@ -285,11 +324,11 @@ form div {
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
-    border: 4px solid black;
+    border-top: 4px solid black;
     padding-top: 1%;
     padding-left: 1%;
-    padding-bottom: 7%;
-    margin-top: 2%;
+    padding-bottom: 1%;
+    margin-top: 1%;
     overflow-x: hidden;
     bottom: 0;
     width: 100%;
@@ -396,6 +435,10 @@ form div {
     }
 
     .titleHt h3{
+        font-size: 16px;
+    }
+
+    .titleHt h4{
         font-size: 16px;
     }
 
