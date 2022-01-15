@@ -85,7 +85,6 @@ a {
 
 .headerTitle {
     grid-area: title;
-    /*color: rgb(10, 36, 107);*/
     color: #6a88f8;
     padding: 2% 0 2% 2%;
     display: flex;
@@ -262,8 +261,7 @@ a {
 }
 
 /*Textos Clases*/
-.claseFlexUno{ 
-    /*-webkit-justify-content: flex-end;*/
+.claseFlexUno{
     align-items: flex-end;
     -webkit-align-items: flex-end;
     text-align: right;
