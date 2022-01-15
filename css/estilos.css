@@ -263,11 +263,9 @@ a {
 
 /*Textos Clases*/
 .claseFlexUno{ 
-    -webkit-justify-content: flex-end;
+    /*-webkit-justify-content: flex-end;*/
     align-items: flex-end;
     -webkit-align-items: flex-end;
-    /*display: flex;
-    justify-content: end;*/
     text-align: right;
     font-weight: bold;
 }
@@ -307,18 +305,22 @@ form div {
 }
 
 .videoResponsive {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 */
-        height: 0;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
       }
 .videoResponsive iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
       }
 
+.mapa{
+    width: 95%;
+    justify-content: space-around;
+    }
 
 /*Redes Sociales*/
 
